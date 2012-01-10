@@ -19,3 +19,8 @@ def bootstrapfield(field):
 @register.filter
 def is_checkbox(field):
     return field.field.widget.__class__.__name__.lower() == "checkboxinput"
+
+@register.filter
+def is_datefield(field):
+    return field.field.widget.__class__.__name__.lower() == "checkboxinput"
+
